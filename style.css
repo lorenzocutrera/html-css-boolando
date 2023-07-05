@@ -1,0 +1,56 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+}
+
+.container {
+    background-color: orange;
+    border: 1px solid black;
+    width: 80%;
+    max-width: 1170px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+header{
+    min-height: 70px;
+    background-color: yellow;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sex{
+    display: flex;
+    width: 20%;
+}
+
+.sex a{
+    text-decoration: none;
+    color: white;
+    padding: 7px;
+}
+
+.logo {
+    width: 60%;
+    text-align: center;
+    color: white;
+    display: flex;
+    align-items: center;
+}
+
+.profile{
+    display: flex;
+    width: 20%;
+}
+
+.profile i {
+    width: 20%;
+    color: white;
+}
