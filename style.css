@@ -6,6 +6,7 @@
 
 body {
     font-family: 'Roboto', sans-serif;
+    
 }
 
 header {
@@ -13,7 +14,10 @@ header {
     background-color: #ff6a00;
     display: flex;
     justify-content: center;
+    position: sticky;
+    top: 0px;
     align-items: center;
+    width: 100%;
     box-shadow: 1px 1px 5px gray;
 }
 
@@ -22,6 +26,8 @@ header {
     max-width: 1170px;
     margin: auto;
     display: flex;
+    flex-wrap: wrap;
+    overflow: auto;
 }
 
 nav {
@@ -71,10 +77,74 @@ main{
 
 .box{
     display: flex;
-}
+flex-wrap: wrap;}
+
 .card {
     width: calc(100% / 3);
     min-height: 500px;
-    margin: 20px;
+    padding: 10px;
+    position: relative;
 }
 
+.back{
+    display: none;
+}
+.card:hover .front{
+    display: none;
+}
+.card:hover .back{
+    display: block;
+    width: 100%;
+}
+
+.heart{
+    display: flex;
+    position: absolute;
+    right: 10px;
+    top: 30px;
+    background-color: white;
+    width: 20px;
+    height: 20px;
+    padding: 20px;
+    align-items: center;
+    justify-content: center;
+}
+
+.heart:hover{
+    color: red;
+}
+
+h4{
+    color: grey;
+}
+
+h2{
+    font-size: 20px;
+}
+
+.price{
+    color: red;
+}
+
+.sales{
+    text-decoration: line-through;
+}
+
+.sconto, .green{
+    color: white;
+    padding: 5px 10px;
+    
+}
+
+.sconto{
+    background-color: red;
+}
+
+.green{
+    background-color: green;
+}
+
+.badge{
+    position: absolute;
+    bottom: 110px;
+}
