@@ -68,7 +68,7 @@ nav {
 .profile i {
     width: 12px;
     color: white;
-    margin: 3px;
+    margin: 8px;
 }
 
 main{
@@ -147,4 +147,40 @@ h2{
 .badge{
     position: absolute;
     bottom: 110px;
+}
+
+footer{
+    margin-top: 50px;
+    color: white;
+    height: 100px;
+    background-color: black;
+    display: flex;
+}
+
+.row{
+    width: 80%;
+    max-width: 1170px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.col{
+    justify-content: space-between;
+}
+
+.left a{
+    text-decoration: none;
+    color: white;
+    padding: 40px  20px 0px 0px;
+}
+
+.right {
+    height: 100%;
+}
+
+.right a {
+    width: 20px;
+    color: white;
 }
